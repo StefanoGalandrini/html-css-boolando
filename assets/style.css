@@ -93,6 +93,10 @@ main {
     flex-wrap: wrap;
 }
 
+main .card {
+margin-bottom: 2rem;
+}
+
 main img {
     width: 22.5vw;
 }
@@ -108,10 +112,15 @@ img.hidden {
     z-index: -1;
 }
 
-.labels .discount {
+.labels {
+    display: flex;
     position: absolute;
     left: 0;
     top: 58vh;
+    gap:.5em    
+}
+
+.labels .discount {
     background-color: red;
     color: white;
     font-size: 0.85em;
@@ -121,19 +130,27 @@ img.hidden {
 }
 
 .labels .sustain {
-    position: absolute;
-    left: 4.6em;
-    top: 58vh;
     background-color: #008000;
     color: white;
     font-size: 0.85em;
     font-weight: 700;
     padding: .2em 1em;
     z-index: 2;
-
 }
 
-.labels .heart {
+.labels .sustain- {
+    position: absolute;
+    left: 4.6em;
+    top: 58vh;
+    background-color: #808000;
+    color: white;
+    font-size: 0.85em;
+    font-weight: 700;
+    padding: .2em 1em;
+    z-index: 2;
+}
+
+.card .heart {
     width: 1.4em;
     height: 1.4em;
     position: absolute;
@@ -148,12 +165,12 @@ img.hidden {
 
 .heart:hover{
     color: red;
+    cursor: pointer;
 }
 
-main .parent:hover img.hidden {
+.parent:hover img.hidden {
     z-index: 0;
 }
-
 
 .brand {
     display: block;
