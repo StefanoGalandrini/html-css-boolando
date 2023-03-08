@@ -146,9 +146,14 @@ img.hidden {
     z-index: 2;
 }
 
+.heart:hover{
+    color: red;
+}
+
 main .parent:hover img.hidden {
     z-index: 0;
 }
+
 
 .brand {
     display: block;
