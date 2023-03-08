@@ -1,5 +1,7 @@
 /* RESET e FONTS */
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;600&display=swap');
+
 *,
 *::before,
 *::after  {
@@ -8,18 +10,69 @@
     box-sizing: border-box;
 }    
 
-
+html {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+}
 
 
 
 
 /*PROPRIETÀ COMUNI */
 
+.items-container {
+    height: 100%;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
 
 
 /* HEADER */
+
+header {
+    height: 3.5vw;
+    background-color: #ff6900;
+    box-shadow: 0 2px 5px #888888;
+}
+
+header .items-container {
+    width: 70vw;
+    margin-inline: auto;
+}
+
+header .left,
+header .right {
+    flex: 0 0 25%;
+}
+
+header .client-type {
+    font-weight: 600;
+    margin-right: 1em;
+}
+
+header .logo {
+    height: 3vh;
+    flex: 0 0 50%;
+}
+
+header i {
+    margin-left: 0.5em;
+}
+
+header .icons {
+text-align: right;
+}
+
+
+
+
 
 
 
