@@ -13,6 +13,7 @@
 body {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
+    --header-color: #ff6900;
 }
 
 
@@ -33,13 +34,23 @@ a {
     align-items: center;
 }
 
+ul {
+    list-style: none;
+    display: flex;
+    gap: 0.75em;
+}
+
+i {
+    display: inline;
+}
+
 
 
 /* HEADER */
 
 header {
     height: 3.5vw;
-    background-color: #ff6900;
+    background-color: var(--header-color);
     box-shadow: 0 2px 5px #888888;
     position: fixed;
     top: 0;
@@ -59,22 +70,18 @@ header .right {
     white-space: nowrap;
 }
 
+ul.right {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
 header .client-type {
     font-weight: 700;
-    margin-right: 1em;
 }
 
 header .logo {
     height: 3vh;
-    flex: 0 0 50%;
-}
-
-header i {
-    margin-left: 0.5em;
-}
-
-header .icons {
-text-align: right;
+    justify-content: center;
 }
 
 
