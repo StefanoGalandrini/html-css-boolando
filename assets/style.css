@@ -41,6 +41,11 @@ header {
     height: 3.5vw;
     background-color: #ff6900;
     box-shadow: 0 2px 5px #888888;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 6;
 }
 
 header .items-container {
@@ -78,7 +83,7 @@ text-align: right;
 
 
 main {
-    padding: 4rem 0;
+    padding: 9rem 0;
 }
 
 .main-container {
