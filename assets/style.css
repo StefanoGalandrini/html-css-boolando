@@ -162,13 +162,21 @@ img.hidden {
     z-index: 2;
 }
 
+.heart {
+    transition: all 0.5s;
+}
+
 .heart:hover{
     color: red;
     cursor: pointer;
 }
 
-.parent:hover img.hidden {
-    z-index: 0;
+img.visible {
+    transition: all 0.5s;
+}
+
+img.visible:hover {
+    opacity: 0;
 }
 
 .brand {
